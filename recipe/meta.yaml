@@ -9,8 +9,8 @@ source:
   url: http://downloads.sourceforge.net/project/{{ name }}/{{ name }}/{{ version }}/{{ name }}-{{ version }}.tar.gz
   sha256: c6324fcee608b99a58f9870157dfa754837f8c48be3df0f5e2f3accf145dee60
 
-patches:
-  - 0000-ac-func-malloc.patch # [linux and (build_platform != target_platform)]
+  patches:
+    - 0000-ac-func-malloc.patch  # [linux and (build_platform != target_platform)]
 
 build:
   number: 1
